@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Container for the planner */
+.container {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%; /* Makes it responsive */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #7100b3;
+}
+
+/* Study Plan Display */
+#studyPlan {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.study-week {
+    background: #e0f7fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.study-topic {
+    background: #d9f99d;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Makes it fit better on mobile */
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    input, select, button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
